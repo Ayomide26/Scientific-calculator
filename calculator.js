@@ -8,13 +8,12 @@ var isLastPressBracClose = false
 var my_sign = false
 var charCount = 0
  var number = document.getElementById("answer_box").innerHTML;
- var x =""
 
 
 
 document.querySelectorAll('.num').forEach(function (element) {
         element.addEventListener('click', function () {
-            // concat()
+           
             if (answer_box.innerHTML == 0 ){
     answer_box.innerHTML = element.innerHTML}
          else  {
@@ -22,11 +21,11 @@ document.querySelectorAll('.num').forEach(function (element) {
 
     }
 
-            // answer_box.innerHTML += element.innerHTML
+            
             my_sign =false;
             charCount++
             concat()
-            // console.log(typeof(element.innerHTML))
+           
         })
     });
   
@@ -57,16 +56,16 @@ document.querySelectorAll('.num').forEach(function (element) {
 
     }
 
-            // answer_box.innerHTML += element.innerHTML
+            
             my_sign =false;
             charCount++
             concat()
-            // console.log(typeof(element.innerHTML))
+            
         })
     });
     document.querySelector('.equal').addEventListener('click',function() {
     var display = document.querySelector('#answer_box').innerHTML;
-    // console.log(display)
+   
     charCount = 0
     display = display.replace(/×/g, '*').replace(/÷/g, '/').replace(/Mod/g, '%');
      dis =eval(display);
@@ -78,10 +77,7 @@ document.querySelectorAll('.num').forEach(function (element) {
 
 document.querySelector('.dele').addEventListener('click',function() {
       var dele =document.getElementById('answer_box').innerHTML;
-//   var dele_key = dele.substring(0,dele.length-1);
-//             //  answer_box.innerHTML = 0;
-//             console.log(dele_key)
-//    document.getElementById("answer_box").innerHTML= dele_key;
+
    if (dele.length != 1) {
         dele = dele.substring(0, dele.length - 1)
         charCount--
@@ -97,13 +93,9 @@ document.querySelector('.dele').addEventListener('click',function() {
     document.getElementById("answer_box").innerHTML= dele;
     }
 
-//    return answer_box.innerHTML === 0; 
+
   );
-//   document.querySelector('.dele').addEventListener('click',function() {
-//       var dele =document.getElementById('answer').innerHTML;
-//   var dele_key = dele.substring(0,dele.length-1);
-//   document.getElementById("answer").innerHTML= dele_key;
-//   });
+
 
   document.querySelectorAll('.delete').forEach(function (element1){
   element1.addEventListener('click',function() {
@@ -112,20 +104,10 @@ document.querySelector('.dele').addEventListener('click',function() {
      concat()
      document.getElementById("answer_box").innerHTML= me;
      
-//       var dele1 =document.getElementById('answer').innerHTML;
-//   var dele_key1 = dele1.substring(0,0);
-//   console.log(dele_key1);
-//   document.getElementById("answer").innerHTML= dele_key1;
+
   });
   });
-//   document.querySelectorAll('.delete').forEach(function (element1){
-//   element1.addEventListener('click',function() {
-//       var dele1 =document.getElementById('answer_box').innerHTML;
-//   var dele_key1 = dele1.substring(0,0);
-//   console.log(dele_key1);
-//   document.getElementById("answer_box").innerHTML= dele_key1;
-//   });
-//   });
+
 
   function square (){
       var square1 =document.getElementById('answer_box').innerHTML;
@@ -167,7 +149,7 @@ document.querySelector('.dele').addEventListener('click',function() {
       document.getElementById('answer_box').innerHTML=sinee;
   }
   function pie(){
-    //   var piee = document.getElementById('answer_box').innerHTML;
+   
       pieee =Math.PI
       document.getElementById('answer_box').innerHTML=pieee;
   }
@@ -196,16 +178,7 @@ function raisepower(){
     lo = Math.log(logee)
     document.getElementById('answer_box').innerHTML=lo;
   }
-//   function factor (nume) {
-//     var fact;
-//     if (nume == 1 || nume == 0) {
-//         return 1
-//     }
-//     for (i = 0; i < nume; i++) {
-//         fact = nume * factorial(nume - 1)
-//     }
-//     return fact
-// }
+
   function factor(number) {
   if (number < 0) 
         return -1;
@@ -220,9 +193,9 @@ function raisepower(){
 console.log(factor(5));
   
 function concat () {
-    // When called on number press it changes the content of the clear button gron 'C' to 'CE'
-    // document.getElementById('answer_box').innerHTML = size
-    // When the number of characters in display exceeds 42, the fontsize decreses and returns a true
+    
+    
+    // When the number of characters in display exceeds 43, the fontsize decreses and returns a true
     if (charCount < 43) {
         if (charCount > 11) {
             
