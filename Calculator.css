@@ -3,8 +3,7 @@
     width: 340px;
     margin-left: 0px;
     margin-top: 15px;
-    /* box-shadow: 1px 1px 5px rgba(39, 37, 37, 0.637); */
-    /* border: 1px solid black; */
+   
 }
 .box2 {
     height: 210px;
@@ -129,28 +128,4 @@ button:focus{
     ::-webkit-scrollbar-thumb:hover {
     background: #F2F2F2; 
     }
-    /* scrollbar ends */
-    /* .list1{ */
-        /* background-color:white;
-        margin-top: -60px;
-       width: 100%;
-        margin-left: 210px;
-        /* left: 250px; */
-        /* position: fixed;
-        z-index: 1; */
-        
-    /* } */
-    /* .list1 li{ */
-        /* margin-left: -120px; */
-        /* left: 0px;
-        border-left: none;
-        border-right: none;
-        height: 60px;
-        width: 100%;
-        display: flex;
-            flex-wrap: none;
-            overflow-x: scroll;
-            overflow-y: hidden;  */
-
-    /* } */
-
+    
